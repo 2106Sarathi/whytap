@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="draw" height="300" width="3000"></canvas>
+    <script>
+        window.onload=function()
+        {
+       let x= document.getElementById("draw")
+       let y=x.getContext("2d");
+       y.moveTo(100,200)
+       y.lineTo(500,100)
+       y.stroke()
+       y.arc(100,200,300,400,500)
+    }
+    </script>
+</body>
+
+<body>
+    
+    <canvas id="somename" height="300" width="300">
+        <svg height="100" width="200" style="border-radius: 50;">
+            <line x1="50" y1="50" x2="200" y2="200" style="stroke:aqua; stroke-width:30;"></line>
+
+        
+        </svg>
+
+    </canvas>
+</body>
+</html>
